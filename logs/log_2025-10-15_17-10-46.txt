@@ -1,3 +1,0 @@
-[2025-10-15 17:10:46] Flysim v.1.2.1 opened!
-[2025-10-15 17:10:46] Starting launcher
-[2025-10-15 17:10:46] Local FlySim version is: 1.2.1
