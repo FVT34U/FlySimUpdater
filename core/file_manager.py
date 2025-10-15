@@ -1,9 +1,11 @@
 import os
 import hashlib
+from logs.logger import Logger
 
 def file_hash(path):
     """Возвращает SHA256 хэш файла"""
     if not os.path.exists(path):
+        Logger.err(f"Cannot count file hash at: {path}, file not found")
         return None
     h = hashlib.sha256()
     with open(path, "rb") as f:

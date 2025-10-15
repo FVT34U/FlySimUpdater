@@ -1,0 +1,12 @@
+[2025-10-15 17:11:11][ERROR] Cannot find 'release.ini' file at release.ini
+[2025-10-15 17:11:11] Starting launcher
+[2025-10-15 17:11:11] Detected first launch, showing installation window
+[2025-10-15 17:11:11] Creating PathDialog
+[2025-10-15 17:11:13] Opening choose file dialog
+[2025-10-15 17:11:44] Text edit widget text setted from dialog window: D:\FutureTransport\FlySim\Flysim\FlySim\FlySim
+[2025-10-15 17:11:46] Selected path setted from text edit widget
+[2025-10-15 17:11:46] Selected path: D:\FutureTransport\FlySim\Flysim\FlySim\FlySim
+[2025-10-15 17:11:46] LogView got new text: 📂 Установочная папка: D:\FutureTransport\FlySim\Flysim\FlySim\FlySim
+[2025-10-15 17:11:46] Writing new values to 'config.ini': local_game_dir: D:\FutureTransport\FlySim\Flysim\FlySim\FlySim, first_launch: False
+[2025-10-15 17:11:46][ERROR] Cannot find 'release.ini' file at D:\FutureTransport\FlySim\Flysim\FlySim\FlySim\release.ini
+[2025-10-15 17:11:46][ERROR] Cannot find local version, set it to: '0.0.0'

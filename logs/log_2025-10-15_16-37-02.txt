@@ -1,0 +1,37 @@
+[2025-10-15 16:37:02] Flysim v.1.2.3 opened!
+[2025-10-15 16:37:02] Starting launcher
+[2025-10-15 16:37:05] Checking for updates
+[2025-10-15 16:37:05] Trying to get local FlySim version
+[2025-10-15 16:37:05] Local FlySim version is: 1.2.3
+[2025-10-15 16:37:05] Local version: 1.2.3
+[2025-10-15 16:37:05] LogView got new text: 🟦 Установленная версия: 1.2.3
+[2025-10-15 16:37:05] LogView got new text: 🔄 Проверка наличия обновлений...
+[2025-10-15 16:37:05] Creating VersionCheckThread
+[2025-10-15 16:37:05] Starting VersionCheckThread
+[2025-10-15 16:37:05] VersionCheckThread is running
+[2025-10-15 16:37:05] Trying get version from server
+[2025-10-15 16:37:07] Remote FlySim version is: 1.2.3
+[2025-10-15 16:37:07] Got remote version: 1.2.3
+[2025-10-15 16:37:07] Is update needed: False
+[2025-10-15 16:37:07] Latest FlySim version is installed
+[2025-10-15 16:37:07] LogView got new text: ✅ У вас установлена последняя версия FlySim.
+[2025-10-15 16:37:09] LogView was cleared
+[2025-10-15 16:37:10] Launching FlySim
+[2025-10-15 16:37:10] LogView got new text: ▶️ Запуск FlySim...
+[2025-10-15 16:37:10] FlySim was successfully launched
+[2025-10-15 16:37:10] LogView got new text: ✅ FlySim запущен успешно.
+[2025-10-15 16:37:17] Checking for updates
+[2025-10-15 16:37:17] Trying to get local FlySim version
+[2025-10-15 16:37:17] Local FlySim version is: 1.2.3
+[2025-10-15 16:37:17] Local version: 1.2.3
+[2025-10-15 16:37:17] LogView got new text: 🟦 Установленная версия: 1.2.3
+[2025-10-15 16:37:17] LogView got new text: 🔄 Проверка наличия обновлений...
+[2025-10-15 16:37:17] Creating VersionCheckThread
+[2025-10-15 16:37:17] Starting VersionCheckThread
+[2025-10-15 16:37:17] VersionCheckThread is running
+[2025-10-15 16:37:17] Trying get version from server
+[2025-10-15 16:37:19] Remote FlySim version is: 1.2.3
+[2025-10-15 16:37:19] Got remote version: 1.2.3
+[2025-10-15 16:37:19] Is update needed: False
+[2025-10-15 16:37:19] Latest FlySim version is installed
+[2025-10-15 16:37:19] LogView got new text: ✅ У вас установлена последняя версия FlySim.
