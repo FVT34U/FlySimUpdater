@@ -1,6 +1,6 @@
 import os
 import hashlib
-from logs.logger import Logger
+from utils.logger import Logger
 
 def file_hash(path):
     """Возвращает SHA256 хэш файла"""

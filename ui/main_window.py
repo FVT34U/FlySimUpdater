@@ -11,8 +11,8 @@ from PyQt5.QtCore import Qt, QThread, pyqtSignal
 from PyQt5.QtGui import QFont, QIcon
 
 from core import version_checker, updater, game_runner
-from config.config import config
-from logs.logger import Logger
+from utils.config import config
+from utils.logger import Logger
 
 
 class InstallPathDialog(QDialog):

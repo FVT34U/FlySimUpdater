@@ -1,10 +1,25 @@
 from datetime import datetime
-import os
-from config.config import config
+import os, sys
+from utils.config import config
 import configparser
 
+
+def get_logs_dir():
+    """Возвращает корректный путь к папке logs — и при разработке, и в собранном .exe"""
+    if hasattr(sys, "_MEIPASS"):
+        # Приложение запущено из exe (PyInstaller)
+        base_path = os.path.dirname(sys.executable)
+    else:
+        # Обычный запуск из исходников
+        base_path = os.path.abspath(".")
+
+    logs_dir = os.path.join(base_path, "logs")
+    os.makedirs(logs_dir, exist_ok=True)  # создаём, если нет
+    return logs_dir
+
+
 class Logger:
-    path = f"logs/log_{str(datetime.now()).split(".")[0].replace(" ", "_").replace(":", "-")}.txt"
+    path = f"{get_logs_dir()}/log_{str(datetime.now()).split(".")[0].replace(" ", "_").replace(":", "-")}.txt"
     with open(path, "x", encoding="utf-8") as f:
         p = os.path.join(config.get("GameInfo", "local_game_dir"), config.get("GameInfo", "version_file"))
         if os.path.exists(p):

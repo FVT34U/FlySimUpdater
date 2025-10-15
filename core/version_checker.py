@@ -1,8 +1,8 @@
 import os
 import requests
 from requests import HTTPError
-from config.config import config
-from logs.logger import Logger
+from utils.config import config
+from utils.logger import Logger
 
 import configparser
 

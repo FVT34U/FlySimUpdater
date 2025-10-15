@@ -1,7 +1,7 @@
 import subprocess
 import os
-from config.config import config
-from logs.logger import Logger
+from utils.config import config
+from utils.logger import Logger
 
 def run_game():
     exe_path = os.path.join(config.get("GameInfo", "local_game_dir"), config.get("GameInfo", "game_exe"))

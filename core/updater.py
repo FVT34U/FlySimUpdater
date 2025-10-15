@@ -2,8 +2,8 @@ import os
 import requests
 from requests import HTTPError
 from core import file_manager
-from config.config import config
-from logs.logger import Logger
+from utils.config import config
+from utils.logger import Logger
 
 
 def download_file(file_info, progress_callback=None, current_index=0, total=1):
