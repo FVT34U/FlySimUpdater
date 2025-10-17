@@ -1,13 +1,13 @@
 import subprocess
 import os
-from utils.config import config
+from core.app_model import app_model
 from utils.logger import Logger
 
 def run_game():
-    exe_path = os.path.join(config.get("GameInfo", "local_game_dir"), config.get("GameInfo", "game_exe"))
+    exe_path = app_model.game_exe_path
 
     if os.path.exists(exe_path):
-        subprocess.Popen([exe_path], cwd=config.get("GameInfo", "local_game_dir"))
+        subprocess.Popen([exe_path], cwd=app_model.game_path)
     else:
         Logger.err(f"Cannot run .exe at {exe_path}, file not found")
         raise FileNotFoundError(f"Cannot run .exe at {exe_path}, file not found")

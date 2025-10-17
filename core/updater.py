@@ -2,16 +2,16 @@ import os
 import requests
 from requests import HTTPError
 from core import file_manager
-from utils.config import config
+from core.app_model import app_model
 from utils.logger import Logger
 
 
 def download_file(file_info, progress_callback=None, current_index=0, total=1):
     """Скачивает один файл"""
-    url = f"{config.get('ServerInfo', 'api_game_url')}/files/{file_info['path']}"
+    url = f"{app_model.api_game_url}/files/{file_info['path']}"
     Logger.log(f"File's server url: {url}")
 
-    local_path = os.path.join(config.get("GameInfo", "local_game_dir"), file_info['path'])
+    local_path = os.path.join(app_model.game_path, file_info['path'])
     Logger.log(f"File's local path: {local_path}")
 
     os.makedirs(os.path.dirname(local_path), exist_ok=True)
@@ -40,7 +40,7 @@ def download_file(file_info, progress_callback=None, current_index=0, total=1):
 def update_game(ui_callback=None):
     """Проверяет и обновляет файлы"""
     try:
-        r = requests.get(f"{config.get('ServerInfo', 'api_game_url')}/files")
+        r = requests.get(f"{app_model.api_game_url}/files")
         r.raise_for_status()
         files = r.json()
         Logger.log(f"Got files from server: {files}")
@@ -49,7 +49,7 @@ def update_game(ui_callback=None):
     except Exception as e:
         Logger.err(f"Unexpected error: {e}")
 
-    game_dir = config.get("GameInfo", "local_game_dir")
+    game_dir = app_model.game_path
     # Пути всех файлов, которые должны существовать (нормализуем для ОС)
     all_files_paths = [os.path.normpath(os.path.join(game_dir, f["path"])) for f in files]
 
@@ -92,4 +92,4 @@ def update_game(ui_callback=None):
     for i, f in enumerate(files_to_update):
         Logger.log(f"Downloading file '{f['path']}'")
         download_file(f, progress_callback=ui_callback, current_index=i, total=total)
-        Logger.log(f"File '{f['path']}' was downloaded!")
+        Logger.log(f"File '{f['path']}' was downloaded")

@@ -12,7 +12,8 @@ def get_cfg_dir():
         base_path = os.path.abspath(".")
 
     cfg_dir = os.path.join(base_path, "config")
-    os.makedirs(cfg_dir, exist_ok=True)  # создаём, если нет
+    os.makedirs(cfg_dir, exist_ok=True)
+
     return cfg_dir
 
 config = configparser.ConfigParser(interpolation=None)

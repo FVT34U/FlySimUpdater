@@ -1,0 +1,14 @@
+{
+    "api_url": "",
+    "api_game_suffix": "game",
+    "api_app_suffix": "app",
+    "api_game_url": "/game",
+    "api_app_url": "/app",
+    "game_path": "",
+    "game_exe_name": "Blocks.exe",
+    "game_exe_path": "Blocks.exe",
+    "release_file_name": "release.ini",
+    "release_file_path": "release.ini",
+    "release_version": "0.0.0",
+    "release_description": ""
+}
